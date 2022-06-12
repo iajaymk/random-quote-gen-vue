@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div id="app">
-        <h2>{{content}}</h2>
-        <h3>-{{author}}</h3>
-        <button v-on:click="getQuote()">New Quote</button>
+    <div id="app" class="quotebox">
+        <div class="px-8">
+            <h2 class="quote">{{content}}</h2>
+            <h3 class="author mt-2">-{{author}}</h3>
+        </div>
+        <button class="bg-orange-400 px-3 py-2 mt-3 rounded-lg"  v-on:click="getQuote()">New Quote</button>
     </div>
 
 
